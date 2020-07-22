@@ -1,0 +1,33 @@
+{
+  "name": "google-index",
+  "version": "0.0.0",
+  "description": "A simple CLI tool which will count yours site pages in Google index",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodion-arr/google-index-count.git"
+  },
+  "bin": {
+    "google-index-count": "./bin/google-index"
+  },
+  "scripts": {
+    "test": "standard && mocha",
+    "debug": "./bin/google-index count --sites='[\"fisherpro.pro\",\"vay.fisherpro.pro\"]'"
+  },
+  "keywords": [
+    "google",
+    "search",
+    "pages",
+    "index"
+  ],
+  "author": "Rodion Abdurakhimov <rodion.arr.web@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^5.2.1",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "standard": "^14.3.4"
+  }
+}
