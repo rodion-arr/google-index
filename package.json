@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rodion-arr/google-index-count.git"
+    "url": "https://github.com/rodion-arr/google-index.git"
   },
   "bin": {
     "google-index-count": "./bin/google-index"
