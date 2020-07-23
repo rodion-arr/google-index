@@ -18,7 +18,8 @@
     "google",
     "search",
     "pages",
-    "index"
+    "index",
+    "cli"
   ],
   "author": "Rodion Abdurakhimov <rodion.arr.web@gmail.com>",
   "license": "MIT",
