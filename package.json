@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "standard && mocha",
-    "debug": "./bin/google-index count --sites='[\"fisherpro.pro\",\"vay.fisherpro.pro\"]'"
+    "debug": "./bin/google-index count --sites='[\"exmaple.com\",\"exmaple2.com\"]'"
   },
   "keywords": [
     "google",
