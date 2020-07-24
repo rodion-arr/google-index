@@ -1,6 +1,7 @@
 # Google index CLI tool
 
 ![Test](https://github.com/rodion-arr/google-index/workflows/Test/badge.svg)
+[![codecov](https://codecov.io/gh/rodion-arr/google-index/branch/master/graph/badge.svg)](https://codecov.io/gh/rodion-arr/google-index)
 <span class="badge-npmversion"><a href="https://npmjs.org/package/google-index" title="View this project on NPM"><img src="https://img.shields.io/npm/v/google-index.svg" alt="NPM version" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/rodion-arr/google-index" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/rodion-arr/google-index.svg" alt="Dependency Status" /></a></span>
 <span class="badge-daviddmdev"><a href="https://david-dm.org/rodion-arr/google-index#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/rodion-arr/google-index.svg" alt="Dev Dependency Status" /></a></span>
