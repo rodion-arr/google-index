@@ -19,3 +19,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install and test
       run: npm it
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage/clover.xml
+        flags: unittests
+        name: lib
+        fail_ci_if_error: false
