@@ -11,7 +11,7 @@
     "google-index-count": "./bin/google-index"
   },
   "scripts": {
-    "test": "standard && nyc mocha",
+    "test": "standard && nyc --reporter=clover --reporter=text mocha",
     "debug": "./bin/google-index count --sites='[\"exmaple.com\",\"exmaple2.com\"]'"
   },
   "keywords": [
