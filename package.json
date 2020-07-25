@@ -8,7 +8,7 @@
     "url": "https://github.com/rodion-arr/google-index.git"
   },
   "bin": {
-    "google-index-count": "./bin/google-index"
+    "google-index": "./bin/google-index"
   },
   "scripts": {
     "test": "standard && nyc --reporter=clover --reporter=text mocha",
