@@ -47,3 +47,10 @@ $ google-index count --sites='["exmaple.com","exmaple2.com"]'
   { site: 'exmaple2.com', count: 1210 }
 ]
 ```
+
+#### 1.1 Runnin `count` command under root user
+
+`count` command accepts `--under-root=true\fales` option.
+
+Passing `true` will disable Chromium sanboxinx during pages parsing.
+Using this option is less secure so use it at your own risk.

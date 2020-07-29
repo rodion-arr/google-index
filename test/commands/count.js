@@ -71,4 +71,43 @@ suite('count command', () => {
       done()
     })
   })
+
+  it('should accept root configuration', function (done) {
+    const jsonValueStub = sinon.stub()
+    jsonValueStub.onCall(0).resolves('About 1,190 results (0.21 seconds)')
+
+    const elementFake = {
+      getProperty: sinon.fake.resolves({
+        jsonValue: jsonValueStub
+      })
+    }
+
+    const pageFake = {
+      goto: sinon.fake.resolves(true),
+      $: sinon.fake.resolves(elementFake)
+    }
+
+    sinon.mock(puppeteer).expects('launch').once().withArgs({ args: ['--no-sandbox'] })
+      .resolves({
+        newPage: sinon.fake.resolves(pageFake),
+        close: sinon.fake.resolves(true)
+      })
+
+    require('../../lib/cli')()([
+      'count',
+      '--sites=\'["exmaple.com"]\'',
+      '--under-root=true'
+    ])
+
+    process.once('commandResult', (results) => {
+      assert.deepStrictEqual(results, [
+        {
+          count: 1190,
+          site: 'exmaple.com'
+        }
+      ])
+
+      done()
+    })
+  })
 })
