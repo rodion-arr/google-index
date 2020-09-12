@@ -1,5 +1,7 @@
 # default
-pacakge-lock.json
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
 
 # Logs
 logs
