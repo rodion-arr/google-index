@@ -14,7 +14,7 @@
     "pretest": "standard",
     "test": "nyc --reporter=clover --reporter=text mocha",
     "tests-only": "nyc --reporter=clover --reporter=text mocha",
-    "debug": "./bin/google-index count --sites='[\"exmaple.com\",\"exmaple2.com\"]'"
+    "debug": "./bin/google-index count --sites='[\"github.com\",\"gitlab.com\"]'"
   },
   "keywords": [
     "google",
@@ -26,13 +26,13 @@
   "author": "Rodion Abdurakhimov <rodion.arr.web@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^5.2.1",
-    "yargs": "^15.4.1"
+    "puppeteer": "^5.3.1",
+    "yargs": "^16.0.3"
   },
   "devDependencies": {
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.3",
     "nyc": "^15.1.0",
-    "sinon": "^9.0.2",
+    "sinon": "^9.2.0",
     "standard": "^14.3.4"
   }
 }
