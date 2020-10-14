@@ -6,7 +6,7 @@
 <span class="badge-daviddm"><a href="https://david-dm.org/rodion-arr/google-index" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/rodion-arr/google-index.svg" alt="Dependency Status" /></a></span>
 <span class="badge-daviddmdev"><a href="https://david-dm.org/rodion-arr/google-index#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/rodion-arr/google-index.svg" alt="Dev Dependency Status" /></a></span>
 
-This is CLI tool for retreiving data from Google search pages.
+This is CLI tool for retrieving data from Google search pages.
 
 Functionality available:
 
@@ -48,9 +48,9 @@ $ google-index count --sites='["exmaple.com","exmaple2.com"]'
 ]
 ```
 
-#### 1.1 Runnin `count` command under root user
+#### 1.1 Running `count` command under root user
 
 `count` command accepts `--under-root=true\fales` option.
 
-Passing `true` will disable Chromium sanboxinx during pages parsing.
+Passing `true` will disable Chromium sanboxing during pages parsing.
 Using this option is less secure so use it at your own risk.
