@@ -1,3 +1,9 @@
+## 2.1.0
+
+### Features
+
+- Add support for running via NPX. ([#20](https://github.com/rodion-arr/google-index/pull/19))
+
 ## 2.0.0
 
 ### Chore & Maintenance

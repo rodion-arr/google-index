@@ -10,16 +10,15 @@ Functionality available:
 
 - Get count of indexed pages for you sites `google-index count`
 
-## Installation
+## Usage
+
+### As global package
 
 ```bash
 npm i -g google-index
-```
 
-## Usage
+google-index
 
-```bash
-$ google-index
 You must specify the command to run
 
 google-index <command> [options]
@@ -31,6 +30,14 @@ Options:
   --help     Show help                                    [boolean]
   --version  Show version number                          [boolean]
 ```
+
+### As NPX script
+
+```bash
+npx google-index --version
+```
+
+## Available commands
 
 ### 1. Get count of pages in Google index
 
