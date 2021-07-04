@@ -1,0 +1,18 @@
+{
+  "versions": [
+    {
+      "version": "*",
+      "target": {
+        "node": "lts_active"
+      },
+      "response": {
+        "type": "time-permitting"
+      },
+      "backing": {
+        "donations": [
+          "https://www.patreon.com/rodion_arr"
+        ]
+      }
+    }
+  ]
+}
