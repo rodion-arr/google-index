@@ -2,7 +2,7 @@
 
 ### Features
 
-- Add support for running via NPX. ([#20](https://github.com/rodion-arr/google-index/pull/19))
+- Add support for running via NPX. ([#20](https://github.com/rodion-arr/google-index/pull/20))
 
 ## 2.0.0
 
