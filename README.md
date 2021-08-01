@@ -1,7 +1,7 @@
 # Google index CLI tool
 
 ![Test](https://github.com/rodion-arr/google-index/workflows/Test/badge.svg)
-[![codecov](https://codecov.io/gh/rodion-arr/google-index/branch/master/graph/badge.svg)](https://codecov.io/gh/rodion-arr/google-index)
+[![codecov](https://codecov.io/gh/rodion-arr/google-index/branch/main/graph/badge.svg)](https://codecov.io/gh/rodion-arr/google-index)
 <span class="badge-npmversion"><a href="https://npmjs.org/package/google-index" title="View this project on NPM"><img src="https://img.shields.io/npm/v/google-index.svg" alt="NPM version" /></a></span>
 
 This is CLI tool for retrieving data from Google search pages.
