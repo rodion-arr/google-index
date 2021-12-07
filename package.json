@@ -2,7 +2,7 @@
   "name": "google-index",
   "version": "2.1.2",
   "description": "A simple CLI tool which will count yours site pages in Google index",
-  "main": "bin/google-index",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/rodion-arr/google-index.git"

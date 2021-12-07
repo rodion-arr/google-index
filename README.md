@@ -37,6 +37,18 @@ Options:
 npx google-index --version
 ```
 
+### Programmatic API
+
+```javascript
+const { count } = require('google-index')
+
+(async () => {
+    console.log(await count(['github.com']))
+})()
+
+// [ { site: 'github.com', count: 66700 } ]
+```
+
 ## Available commands
 
 ### 1. Get count of pages in Google index
@@ -46,10 +58,10 @@ Accepts `--sites` option with JSON array of sites' domains (without protocol `ht
 Returns array parsed data.
 
 ```bash
-$ google-index count --sites='["exmaple.com","exmaple2.com"]'
+$ google-index count --sites='["example.com","example2.com"]'
 [
-  { site: 'exmaple.com', count: 8080 },
-  { site: 'exmaple2.com', count: 1210 }
+  { site: 'example.com', count: 8080 },
+  { site: 'example2.com', count: 1210 }
 ]
 ```
 

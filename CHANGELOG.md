@@ -1,3 +1,9 @@
+## 2.2.0
+
+### Features
+
+- Add programmatic API for `count` command. ([#26](https://github.com/rodion-arr/google-index/pull/26))
+
 ## 2.1.0
 
 ### Features

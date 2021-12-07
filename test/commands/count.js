@@ -30,7 +30,7 @@ suite('count command', () => {
     })
   })
 
-  it('should retrieve pages amout', function (done) {
+  it('should retrieve pages amount', function (done) {
     const jsonValueStub = sinon.stub()
     jsonValueStub.onCall(0).resolves('About 1,190 results (0.21 seconds)')
     jsonValueStub.onCall(1).rejects(new Error())
@@ -53,14 +53,14 @@ suite('count command', () => {
 
     require('../../lib/cli')()([
       'count',
-      '--sites=\'["exmaple.com","example2.com"]\''
+      '--sites=\'["example.com","example2.com"]\''
     ])
 
     process.once('commandResult', (results) => {
       assert.deepStrictEqual(results, [
         {
           count: 1190,
-          site: 'exmaple.com'
+          site: 'example.com'
         },
         {
           count: 'Error retrieving data from example2.com',
@@ -95,7 +95,7 @@ suite('count command', () => {
 
     require('../../lib/cli')()([
       'count',
-      '--sites=\'["exmaple.com"]\'',
+      '--sites=\'["example.com"]\'',
       '--under-root=true'
     ])
 
@@ -103,7 +103,7 @@ suite('count command', () => {
       assert.deepStrictEqual(results, [
         {
           count: 1190,
-          site: 'exmaple.com'
+          site: 'example.com'
         }
       ])
 
