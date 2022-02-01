@@ -40,11 +40,11 @@ npx google-index --version
 ### Programmatic API
 
 ```javascript
-const { count } = require('google-index')
+const { count } = require('google-index');
 
 (async () => {
-    console.log(await count(['github.com']))
-})()
+    console.log(await count(['github.com']));
+})();
 
 // [ { site: 'github.com', count: 66700 } ]
 ```
