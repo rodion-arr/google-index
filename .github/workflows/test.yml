@@ -7,23 +7,13 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x, 17.x]
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install and test
-      run: npm it
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage/clover.xml
-        flags: unittests
-        name: lib
-        fail_ci_if_error: false
+    uses: pkgjs/action/.github/workflows/node-test.yaml@v0
+    with:
+      post-test-steps: |
+        - name: Upload coverage to Codecov
+          uses: codecov/codecov-action@v1
+          with:
+            file: ./coverage/clover.xml
+            flags: unittests
+            name: lib
+            fail_ci_if_error: false
