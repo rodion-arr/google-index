@@ -1,6 +1,6 @@
 {
   "name": "google-index",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "A simple CLI tool which will count yours site pages in Google index",
   "main": "index.js",
   "repository": {
