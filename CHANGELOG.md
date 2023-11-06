@@ -1,3 +1,7 @@
+## 3.0.0
+- [breaking] remove support for node v12 and v14
+- upgrade dependencies
+
 ## 2.2.0
 
 ### Features
